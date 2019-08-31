@@ -1,5 +1,5 @@
 <#include "components/layout.ftl">
-<@layout title="${options.blog_title!}" keywords="${options.seo_keywords!}" description="${options.seo_description!}" bodyClass="post-template">
+<@layout title="${post.title!} - ${options.blog_title!}" keywords="${options.seo_keywords!}" description="${options.seo_description!}" bodyClass="post-template">
     <#if post.thumbnail?? && post.thumbnail!=''>
         <section class="site-hero responsive-title-img" style="background-image: url('${post.thumbnail!});">
     <#else>

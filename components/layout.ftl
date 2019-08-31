@@ -24,7 +24,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <@menuTag method="list">
-                            <#list menus as menu>
+                            <#list menus?sort_by('priority') as menu>
                                 <li class="nav-item"><!-- 选中菜单添加  .active -->
                                     <a class="nav-link" href="${menu.url!}">${menu.name!}</a>
                                 </li>
