@@ -1,0 +1,7 @@
+normal:
+  label: 基本设置
+  items:
+    index_cover:
+      name: index_cover
+      label: 首页头图
+      type: attachment
